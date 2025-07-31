@@ -1,0 +1,31 @@
+{% extends "header.html" %}
+{% block body %}
+    <br /> <br /> <br /> <br />
+
+    <div class="container">
+        <div class="card mx-auto" style="width: 25rem;">
+          <div class="card-body text-center">
+            <img src="https://i7.pngguru.com/preview/384/706/535/computer-icons-user-login-gender.jpg" alt="..." class="img-thumbnail rounded-circle" style="width:100px;height:100px">
+            <form action="/login" method="POST">
+
+                <div class="input-group mb-2 mr-sm-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text"><i class="fas fa-envelope"></i></div>
+                    </div>
+                    <input type="text" class="form-control" aria-describedby="emailHelp" name="email" placeholder="Enter email">
+                </div>
+                <div class="input-group mb-2 mr-sm-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text"><i class="fas fa-lock"></i></div>
+                    </div>
+                    <input type="password" class="form-control" name="password" placeholder="Password">
+                </div>
+
+                  <button type="submit" class="btn btn-primary">Log In</button>
+                <p style="margin:2%">Not a member yet? <a href="/registration">Sign In</a></p>
+            </form>
+
+          </div>
+        </div>
+    </div>
+{% endblock %}

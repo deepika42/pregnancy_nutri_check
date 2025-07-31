@@ -1,0 +1,164 @@
+{% extends "header.html" %}
+{% include "navbar.html" %}
+{% block body %}
+<br /> <br /> <br /> <br /> <br />
+
+<div class="container">
+
+    <!-- <div class="row justify-content-center">
+      <button type="button" class="btn btn-primary view_bn" data-userid="{{data[0]}}" style="margin-top:5px">Edit</button>
+
+    </div> -->
+
+    <div class="row" style="margin-top:20px">
+      <!-- <div class="card mx-auto show_patient_data" style="width: 40rem">
+      </div> -->
+        <div class="card mx-auto hide_patient_data" style="width: 20rem">
+          <div class="card-body">
+            <div class="row">
+                <div class="col">
+                  <label>Name</label>
+                </div>
+                <div class="col">
+                  <label>{{data[2]}} </label>
+                </div>
+              </div>
+              <div class="row">
+                  <div class="col">
+                    <label>Phone</label>
+                  </div>
+                  <div class="col">
+                    <label>{{data[3]}} </label>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                      <label>Place</label>
+                    </div>
+                    <div class="col">
+                      <label>{{data[4]}} </label>
+                    </div>
+                  </div>
+                  <div class="row">
+                      <div class="col">
+                        <label>Age</label>
+                      </div>
+                      <div class="col">
+                        <label>{{data[5]}} </label>
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                          <label>Bloodgroup</label>
+                        </div>
+                        <div class="col">
+                          <label>{{data[6]}} </label>
+                        </div>
+                      </div>
+                      <div class="row">
+                          <div class="col">
+                            <label>Weight</label>
+                          </div>
+                          <div class="col">
+                            <label>{{data[7]}} </label>
+                          </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                              <label>Height</label>
+                            </div>
+                            <div class="col">
+                              <label>{{data[8]}} </label>
+                            </div>
+                          </div>
+                          <div class="row">
+                              <div class="col">
+                                <label>Duedate</label>
+                              </div>
+                              <div class="col">
+                                <label>{{data[9]}} </label>
+                              </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                  <label>Exercise Needed</label>
+                                </div>
+                                <div class="col">
+                                  <label>{{data[10]}} </label>
+                                </div>
+                              </div>
+          </div>
+
+            </div>
+            </div>
+
+            <div class="row justify-content-center">
+              <a href="/blood_report_details/{{data[0]}}" id="hide_button" class="btn btn-primary" style="width: 20rem;margin-top:20px;" role="button">Add Blood Report Details</a>
+            </div>
+
+
+
+            <!-- <a href="/blood_report_details" id="hide_button" class="btn btn-primary" role="button" >Add Blood Report Details</a> -->
+
+            <div id ="content">
+            </div>
+
+    </div>
+
+
+<script>
+$(document).ready(function()
+{
+  $(document).on('click','.view_bn',function()
+  {
+    var patient_id = $(this).data('userid')
+    alert(patient_id)
+    // $hide_patient_data = $(".hide_patient_data")
+    // $hide_patient_data.hide()
+    // alert(":dfhkhdl")
+    })
+
+
+    $(document).on('click','.show_form',function()
+    {
+      var x = document.getElementById("hide_button");
+      x.style.display = "none"
+      // content.innerHTML = await (await fetch("blood_report_details.html")).text();
+      })
+
+    // $.ajax(
+    //                     {
+    //                          url:"/getpatientdata/"+patient_id,
+    //                          type:"get",
+    //                          success:function(response)
+    //                          {
+    //                            var $show_patient_data= document.getElementByClass("show_patient_data");
+    //                            $show_patient_data.innerHTML = '';
+    //                            if (response !="")
+    //                            {
+    //                              $show_patient_data.innerHTML = $show_patient_data.innerHTML + `<div class="container" >
+    //                              <div class="row"><p>Name : response[2]</p></div>
+    //                              <div class="row"><p>Blood Grp : A+</p></div>
+    //                              <div class="row"><p>Height : 5.8</p></div>
+    //                              <div class="row"><p>Due Date : 02-March-2020</p></div>
+    //                              <div class="row"><p>Place : Mulund</p></div>
+    //                              <div class="row"><p>Age : 22</p></div>
+    //
+    //                              </div>`;
+    //                            }
+    //                            else{
+    //                              alert("errorshflhdl ")
+    //                            }
+    //
+    //                                                 {
+    //                             alert(JSON.stringify(response))
+    //                          }
+    //                     }
+    //             )
+
+
+})
+
+
+</script>
+{% endblock %}

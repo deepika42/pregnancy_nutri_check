@@ -1,0 +1,87 @@
+{% extends "header.html" %}
+{% block body %}
+
+    <br /> <br /> <br /> <br />
+
+<div class="container">
+    <div class="card mx-auto" style="width: 25rem;">
+      <div class="card-body text-center">
+          <div class="card-title"><b>Patient Details</b></div>
+        <form action="/patient_details" method="POST">
+
+            <div class="input-group mb-2 mr-sm-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text"></div>
+                    </div>
+                <input type="text" class="form-control"  name="patient_name" placeholder="Enter patient name">
+            </div>
+
+            <div class="input-group mb-2 mr-sm-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text"></div>
+                    </div>
+                <input type="text" class="form-control"  name="phone" placeholder="Enter phone number">
+            </div>
+
+
+            <div class="input-group mb-2 mr-sm-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text"></div>
+                    </div>
+                <input type="text" class="form-control"  name="place" placeholder="Enter place">
+            </div>
+
+            <div class="input-group mb-2 mr-sm-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text"></div>
+                    </div>
+                <input type="text" class="form-control"  name="age" placeholder="Enter age">
+            </div>
+
+            <div class="input-group mb-2 mr-sm-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text"></div>
+                    </div>
+                <input type="text" class="form-control"  name="bloodgroup" placeholder="Enter blood group">
+            </div>
+
+            <div class="input-group mb-2 mr-sm-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text"></div>
+                    </div>
+                <input type="text" class="form-control"  name="weight" placeholder="Enter weight">
+            </div>
+
+            <div class="input-group mb-2 mr-sm-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text"></div>
+                    </div>
+                <input type="text" class="form-control"  name="height" placeholder="Enter height">
+            </div>
+
+            <div class="input-group mb-2 mr-sm-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text"></div>
+                    </div>
+                <input type="text" class="form-control"  name="duedate" placeholder="Enter due date">
+            </div>
+
+            <div class="input-group mb-2 mr-sm-2">
+
+              <label style="padding-right:20px">Exercise needed ?</label>
+
+              <div class="radio-inline">
+                <label><input type="radio" name="exercise" value="YES" checked>YES</label>
+                <label><input type="radio" name="exercise" value="YES">NO</label>
+            </div>
+            </div>
+
+
+              <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+      </div>
+    </div>
+</div>
+
+{% endblock %}

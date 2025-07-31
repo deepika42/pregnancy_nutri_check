@@ -1,0 +1,102 @@
+{% extends "header.html" %}
+{% include "navbar.html" %}
+{% block body %}
+<br /> <br /> <br /> <br /> <br />
+<div class="container">
+    <div class="row" style="margin-top:20px">
+        <div class="card mx-auto hide_patient_data" style="width: 20rem">
+          <div class="card-body">
+            <div class="row">
+                <div class="col">
+                  <label>Protein</label>
+                </div>
+                <div class="col">
+                  <label>{{data[2]}} </label>
+                </div>
+              </div>
+              <div class="row">
+                  <div class="col">
+                    <label>Cholesterol</label>
+                  </div>
+                  <div class="col">
+                    <label>{{data[3]}} </label>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                      <label>Vitamin A</label>
+                    </div>
+                    <div class="col">
+                      <label>{{data[4]}} </label>
+                    </div>
+                  </div>
+                  <div class="row">
+                      <div class="col">
+                        <label>Vitamin B</label>
+                      </div>
+                      <div class="col">
+                        <label>{{data[5]}} </label>
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                          <label>Vitamin C</label>
+                        </div>
+                        <div class="col">
+                          <label>{{data[6]}} </label>
+                        </div>
+                      </div>
+                      <div class="row">
+                          <div class="col">
+                            <label>Vitamin D</label>
+                          </div>
+                          <div class="col">
+                            <label>{{data[7]}} </label>
+                          </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                              <label>Folate</label>
+                            </div>
+                            <div class="col">
+                              <label>{{data[8]}} </label>
+                            </div>
+                          </div>
+                          <div class="row">
+                              <div class="col">
+                                <label>Calcium</label>
+                              </div>
+                              <div class="col">
+                                <label>{{data[9]}} </label>
+                              </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                  <label>Iron</label>
+                                </div>
+                                <div class="col">
+                                  <label>{{data[10]}} </label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                  <div class="col">
+                                    <label>Sodium</label>
+                                  </div>
+                                  <div class="col">
+                                    <label>{{data[11]}} </label>
+                                  </div>
+                                </div>
+         </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <a href="/allergies/{{data[0]}}" id="hide_button" class="btn btn-primary" style="width: 20rem;margin-top:20px;" role="button">Add Allergies</a>
+  </div>
+
+  </div>
+
+
+{% endblock %}

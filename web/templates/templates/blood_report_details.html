@@ -1,0 +1,123 @@
+{% extends "header.html" %}
+{% block body %}
+
+    <br /> <br /> <br /> <br />
+
+<div class="container">
+    <div class="card mx-auto" style="width: 25rem;">
+      <div class="card-body text-center">
+          <div class="card-title"><b>Blood Report Details</b></div>
+        <form action="/blood_report_details/{{data}}" method="POST">
+
+  <div class="row">
+    <div class="col">
+      <div class="input-group mb-2 mr-sm-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text"></div>
+              </div>
+          <input type="text" class="form-control"  name="protein" placeholder="Enter protein">
+      </div>
+     </div>
+    <div class="col">
+      <div class="input-group mb-2 mr-sm-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text"></div>
+              </div>
+          <input type="text" class="form-control"  name="cholesterol" placeholder="Enter cholesterol">
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <div class="input-group mb-2 mr-sm-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text"></div>
+              </div>
+          <input type="text" class="form-control"  name="vitamin_a" placeholder="Enter vitamin A">
+      </div>
+
+     </div>
+    <div class="col">
+      <div class="input-group mb-2 mr-sm-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text"></div>
+              </div>
+          <input type="text" class="form-control"  name="vitamin_b" placeholder="Enter vitamin B">
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <div class="input-group mb-2 mr-sm-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text"></div>
+              </div>
+          <input type="text" class="form-control"  name="vitamin_c" placeholder="Enter vitamin C">
+      </div>
+
+     </div>
+    <div class="col">
+      <div class="input-group mb-2 mr-sm-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text"></div>
+              </div>
+          <input type="text" class="form-control"  name="vitamin_d" placeholder="Enter vitamin D">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+
+    <div class="col">
+      <div class="input-group mb-2 mr-sm-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text"></div>
+              </div>
+          <input type="text" class="form-control"  name="folate" placeholder="Enter folate">
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="input-group mb-2 mr-sm-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text"></div>
+              </div>
+          <input type="text" class="form-control"  name="calcium" placeholder="Enter calcium">
+      </div>
+
+     </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <div class="input-group mb-2 mr-sm-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text"></div>
+              </div>
+          <input type="text" class="form-control"  name="iron" placeholder="Enter iron">
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="input-group mb-2 mr-sm-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text"></div>
+              </div>
+          <input type="text" class="form-control"  name="sodium" placeholder="Enter sodium">
+      </div>
+
+     </div>
+  </div>
+
+              <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+      </div>
+    </div>
+</div>
+
+{% endblock %}

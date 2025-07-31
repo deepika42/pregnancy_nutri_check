@@ -1,0 +1,48 @@
+{% extends "header.html" %}
+{% include "navbar.html" %}
+{% block body %}
+<br /> <br /> <br /> <br /> <br />
+
+<div class="container">
+    <div class="row" style="margin-top:20px">
+        <div class="card mx-auto">
+
+          {% for item in data %}
+          <div class="card" style="width:45rem; margin:5px">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-3">
+                        <h5 class="card-title">{{item[2]}}</h5>
+                    </div>
+
+                    <div class="col-3">
+                        <h5 class="card-title">{{item[3]}}</h5>
+                    </div>
+
+                    <div class="col-3">
+                        <h5 class="card-title">{{item[9]}}</h5>
+
+                    </div>
+
+                    <div class="col-3 getviewdata" data-userid="{{item[0]}}">
+                        <a href="/view_patient/{{item[0]}}" class="btn btn-primary">View</a>
+
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          {% endfor %}
+
+
+            </div>
+    </div>
+</div>
+<div class="row justify-content-center">
+  <a href="/patient_details" class="btn btn-primary" style="width: 20rem;margin-top:20px;" role="button" >Add patient</a>
+</div>
+
+
+
+
+{% endblock %}
