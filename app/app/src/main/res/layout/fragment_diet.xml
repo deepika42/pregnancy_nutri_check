@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    >
+	<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="?attr/actionBarSize"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:background="@color/colorAccent"
+		android:id="@+id/diet_toolbar"
+		android:elevation="4dp"
+		android:theme="@style/Theme.Design.Light.NoActionBar"
+		app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+		>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="horizontal"
+			android:weightSum="2">
+		<LinearLayout
+			android:gravity="center"
+			android:orientation="vertical"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="match_parent"
+			android:layout_gravity="center">
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:text="Diet Plan Week"
+			android:textColor="#fff"
+			android:textStyle="bold"
+			android:textSize="20sp"
+			android:gravity="center_vertical"
+			/>
+		</LinearLayout>
+			<LinearLayout
+				android:gravity="center"
+				android:orientation="vertical"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:layout_height="match_parent"
+				android:layout_gravity="center">
+				<TextView
+					android:id="@+id/week"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:text=" no"
+					android:textColor="#fff"
+					android:textStyle="bold"
+					android:textSize="20sp"
+					android:gravity="center_vertical"
+					/>
+			</LinearLayout>
+		</LinearLayout>
+	</androidx.appcompat.widget.Toolbar>
+
+	<androidx.cardview.widget.CardView
+		android:layout_width="325sp"
+		android:layout_height="200sp"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="80dp"
+		android:id="@+id/cardview"
+		>
+		<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="You will need"
+				android:textColor="#000"
+				android:textStyle="bold"
+				android:textSize="22sp"
+				android:layout_marginLeft="10sp"
+				android:padding="5sp"
+				android:id="@+id/card1text1"
+				/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Vitamin A , Vitamin D and Iron."
+				android:textColor="#000"
+				android:textSize="20sp"
+				android:layout_marginLeft="10sp"
+				android:padding="5sp"
+				android:id="@+id/card1text2"
+				android:layout_below="@+id/card1text1"
+				/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="A variety of fruit - Apples , oranges , watermelon , kiwi , and papaya are some of your best options."
+				android:textColor="#000"
+				android:textSize="20sp"
+				android:layout_marginLeft="10sp"
+				android:padding="5sp"
+				android:id="@+id/card1text3"
+				android:layout_below="@+id/card1text2"
+				/>
+
+		</RelativeLayout>
+
+
+	</androidx.cardview.widget.CardView>
+
+	<androidx.cardview.widget.CardView
+		android:layout_width="325sp"
+		android:layout_height="400sp"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="20sp"
+		android:layout_below="@+id/cardview"
+		>
+		<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Recommended Diet"
+				android:textColor="#000"
+				android:textStyle="bold"
+				android:textSize="22sp"
+				android:layout_marginLeft="10sp"
+				android:padding="5sp"
+				android:id="@+id/card2text1"
+				/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="food1"
+				android:textColor="@color/colorAccent"
+				android:textStyle="bold"
+				android:textSize="20sp"
+				android:layout_marginLeft="10sp"
+				android:padding="5sp"
+				android:id="@+id/food1"
+				android:layout_below="@+id/card2text1"
+				/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="food2"
+				android:textColor="@color/colorAccent"
+				android:textStyle="bold"
+				android:textSize="20sp"
+				android:layout_marginLeft="10sp"
+				android:padding="5sp"
+				android:id="@+id/food2"
+				android:layout_below="@+id/food1"
+				/>
+			<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="food3"
+			android:textColor="@color/colorAccent"
+			android:textStyle="bold"
+			android:textSize="20sp"
+			android:layout_marginLeft="10sp"
+			android:padding="5sp"
+			android:id="@+id/food3"
+			android:layout_below="@+id/food2"
+			/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="food4"
+				android:textColor="@color/colorAccent"
+				android:textStyle="bold"
+				android:textSize="20sp"
+				android:layout_marginLeft="10sp"
+				android:padding="5sp"
+				android:id="@+id/food4"
+				android:layout_below="@+id/food3"
+				/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="food5"
+				android:textColor="@color/colorAccent"
+				android:textStyle="bold"
+				android:textSize="20sp"
+				android:layout_marginLeft="10sp"
+				android:padding="5sp"
+				android:id="@+id/food5"
+				android:layout_below="@+id/food4"
+				/>
+
+		</RelativeLayout>
+
+	</androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

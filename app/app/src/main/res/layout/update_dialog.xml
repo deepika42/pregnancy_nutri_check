@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Appointment Name"
+        android:layout_centerHorizontal="true"
+        android:ems="10"/>
+
+    <EditText
+        android:id="@+id/edtDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Appointment Detail"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edtName"
+        android:ems="10"/>
+
+    <EditText
+        android:id="@+id/edtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Select Date"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edtDetail"
+        android:ems="10"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SELECT DATE"
+        android:textSize="10dp"
+        android:id="@+id/btn_date"
+        android:layout_alignBottom="@+id/edtDate"
+        android:layout_toRightOf="@+id/edtDate"
+        android:layout_toEndOf="@+id/edtDate" />
+
+    <EditText
+        android:id="@+id/edtTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Select Time"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edtDate"
+        android:ems="10"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SELECT TIME"
+        android:textSize="10dp"
+        android:id="@+id/btn_time"
+        android:layout_alignBottom="@+id/edtTime"
+        android:layout_toRightOf="@+id/edtTime"
+        android:layout_toEndOf="@+id/edtTime" />
+
+    <EditText
+        android:id="@+id/edtNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Note"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edtTime"
+        android:ems="10"/>
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtNote"
+        android:minWidth="160dp"
+        android:text="Update"
+        android:layout_centerHorizontal="true"
+        />
+
+</LinearLayout>
