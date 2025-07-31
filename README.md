@@ -1,2 +1,1 @@
-# pregnancy_nutri_check
 Pregnancy NutriCheck is an open-source application designed to support pregnant women with personalized nutritional guidance throughout the entire 9-month journey of pregnancy. The goal is to promote healthier pregnancies and reduce maternal and newborn mortality, especially in rural and underserved communities.
